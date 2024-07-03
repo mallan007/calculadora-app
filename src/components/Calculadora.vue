@@ -2,7 +2,7 @@
   <div>
     <div class="calculadora">
       <div class="display">
-        {{ valorCorrente || '0' }}
+        {{ valorCorrente || '' }}
       </div>
       <div @click="limpar" class="botao">C</div>
       <div @click="sinal" class="botao">+/-</div>
@@ -73,7 +73,6 @@ export default {
       this.operadorClicado = true;
     },
 
-
     dividir() {
       this.operador = (num1, num2) => num1 / num2;
       this.setarValor();
@@ -95,11 +94,15 @@ export default {
     },
 
     resultado() {
-      this.valorCorrente = `${this.operador(
-        parseFloat(this.numeroAnterior),
-        parseFloat(this.valorCorrente),
-      )}`;
-      this.numeroAnterior = null;
+      if (this.numeroAnterior === null || this.operador === null) {
+        this.setarValor(); // this.numeroAnterior = this.valorCorrente;
+      } else {
+        this.valorCorrente = `${this.operador(
+          parseFloat(this.numeroAnterior),
+          parseFloat(this.valorCorrente),
+        )}`;
+        this.numeroAnterior = null;
+      }
     },
   },
 };
