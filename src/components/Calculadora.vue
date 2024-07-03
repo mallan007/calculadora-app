@@ -95,7 +95,7 @@ export default {
 
     resultado() {
       if (this.numeroAnterior === null || this.operador === null) {
-        this.setarValor(); // this.numeroAnterior = this.valorCorrente;
+        this.numeroAnterior = this.valorCorrente;
       } else {
         this.valorCorrente = `${this.operador(
           parseFloat(this.numeroAnterior),
