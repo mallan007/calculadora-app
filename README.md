@@ -23,3 +23,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
  npm i -g @vue/cli-init
 
  vue init webpack calculadora-app
+
+Em Vue existem 3 tags:
+<template>
+  Camada onde eh feita a estrutura do documento -> HTML. Por meio das divs, o vue pode agir. (Jah estah referenciado index.html<-->main.js)
+<script> 
+  Camada onde eh feita a lohgica -> JS
+<style>
+  Camada onde eh feita a estilizacaho -> CSS
