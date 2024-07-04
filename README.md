@@ -18,12 +18,22 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Dependencies 
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader). 
+
+https://github.com/jantimon/html-webpack-plugin
  
  npm i -g @vue/cli-init
 
- vue init webpack calculadora-app
+ vue init webpack calculadora-app (cria j[a com webpack])
 
+ Adicionar no arquivo package.json para rodar em tempo sincrono:
+  --open --hot 
+
+
+
+## Concepts
 Em Vue existem 3 tags:
 <template>
   Camada onde eh feita a estrutura do documento -> HTML. Por meio das divs, o vue pode agir. (Jah estah referenciado index.html<-->main.js)

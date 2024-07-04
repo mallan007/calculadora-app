@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png"> <!-- Retirar essa imagem-->
+  
     <Calculadora/>
   </div>
 </template>
